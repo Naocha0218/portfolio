@@ -1,12 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-  <div></div>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naocha</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/modaal.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/modaal.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <img  class="logo" src="image/150x50.png">
+        </div>
+        <div class="header-right">
+          <a class="scroll-btn" href="#top" class="">TOP</a>
+          <a href="#about" class="">ABOUT</a>
+          <a href="#portfolio" class="">PORTFOLIO</a>
+          <a href="#contact" class="">CONTACT</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="top-wrapper" id="top">
+      <div class="container">
+        <h1>PORTFOLIO</h1>
+        <p>わたしのあしあと</p>
+      </div>
+    </div>
+
+    <div class="about-wrapper" id="about">
+      <div class="container">
+        <div class="heading">
+            <h2>ABOUT</h2>
+        </div>
+        <div class="about">
+          <div class="about-left">
+            <img class="buta" src="image/IMG_2502_JPG.png">
+          </div>
+          <div class="about-right">
+            <div class="profile">
+              <div class="profile-left">
+                <ul>
+                  <li>Name</li>
+                  <li>BirthDay</li>
+                  <li>History</li>
+                </ul>
+              </div>
+              <div class="profile-right">
+                <ul>
+                  <li>野田 直輝</li>
+                  <li>1996/2/18</li>
+                  <li>鹿児島出身、専門学校を卒業後上京。<br>
+                    Railsエンジニアになるため日々勉強中。</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-wrapper" id="portfolio">
+      <div class="container">
+        <div class="heading">
+          <h2>PORTFOLIO</h2>
+        </div>
+        <div class="portfolios">
+          <div class="portfolio">
+            <p>PORTFOLIO</p>
+            <button class="js-image-modal" data-id="1">
+              <img src="image/300x200.png">
+            </button>
+            <p class="text-contents">このサイトになります。PCとスマホでデザインが変わるレスポンシブデザインを導入してみました。</p>
+          </div>
+          <div class="portfolio">
+            <p>BLOG</p>
+            <button class="js-image-modal" data-id="2">
+                <img src="image/300x200.png">
+            </button>
+            <p class="text-contents">共同で運営しているブログのデザインを担当しました。</p>
+          </div>
+          <div class="portfolio">
+            <p>TASKApp</p>
+            <button class="js-image-modal" data-id="3">
+                <img src="image/300x200.png">
+            </button>
+            <p class="text-contents">Ruby on Railsを用いてタスク管理アプリを作成しました。</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal js-modal" data-id="modal1">
+      <div class="close-modal">
+        <i class="fa fa-2x fa-times"></i>
+      </div>
+      <div id="portfolio-detail">
+        <h2>PORTFOLIO</h2>
+        <img src="image/pc_image.png">
+        <h3>説明</h3>
+        <p>はじめてのポートフォリオサイトの開発です。</p>
+        <p>HTMLCSSjQueryの学習をアウトプットした</p>
+        <p>ものになります。</p>
+        <p>フロントエンドエンジニアを目指すものとして</p>
+        <p>いずれ作り直したいと思います。</p>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="modal js-modal" data-id="modal2">
+      <div class="close-modal">
+        <i class="fa fa-2x fa-times"></i>
+      </div>
+      <div id="portfolio-detail">
+        <h2>BLOG</h2>
+        <img src="image/585x1000.png">
+        <h3>説明</h3>
+        ~~~~~~~~~
+        ~~~~~~~~~
+        ~~~~~~~~~
+      </div>
+    </div>
+
+    <div class="modal js-modal" data-id="modal3">
+      <div class="close-modal">
+        <i class="fa fa-2x fa-times"></i>
+      </div>
+      <div id="portfolio-detail">
+        <h2>TASKApp</h2>
+        <img src="image/585x1000.png">
+        <h3>説明</h3>
+        ~~~~~~~~~
+        ~~~~~~~~~
+        ~~~~~~~~~
+      </div>
+    </div>
+
+    <div class="contact-wrapper" id="contact">
+      <div class="container">
+        <div class="heading">
+          <h2>CONTACT</h2>
+        </div>
+        <div class="mail">
+          nn19960218@gmail.com
+        </div>
+        <div class="contacts">
+            <a href="https://twitter.com" class="btn twitter">
+              <i class="fab fa-twitter"></i>
+              Twitter
+            </a>
+            <a href="https://qiita.com/" class="btn qiita">
+              <span class="fa-stack" style="color:#4cb10d">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa-search fa-stack-1x fa-inverse fa-2x"></i>
+              </span>
+              Qiita
+            </a>
+            <a href="https://www.wantedly.com/users/" class="btn wantedly">
+              Wantedly
+            </a>
+            <a href="https://github.com/" class="btn github">
+              <i class="fab fa-github"></i>
+              Github
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <small>Copyright&copy;2019 naocha All right reserved</small>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
 </html>

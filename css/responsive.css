@@ -1,0 +1,76 @@
+/* タブレット向けレイアウト */
+@media all and (max-width: 1000px) {
+  .portfolio {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .top-wrapper h1 {
+    font-size: 32px;
+  }
+
+  .heading h2 {
+    font-size: 20px;
+  }
+}
+
+/* スマホ向けレイアウト */
+@media all and (max-width: 670px) {
+  .portfolio {
+    width: 100%;
+  }
+
+  .about {
+    min-width: 0;
+  }
+
+  .about-left {
+    width: 100%
+  }
+
+  .about-right {
+    width: 100%;
+    padding: 0 0;
+    margin: 0 0;
+  }
+  
+  .btn {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .facebook {
+    margin-bottom: 10px;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .header-right {
+    float: none;
+  }
+
+  .header-right a{
+    padding: 0 10px;
+  }
+
+  .header-left {
+    display: none;
+  }
+  
+  
+  .top-wrapper h1 {
+    font-size: 24px;
+  }
+
+  .top-wrapper p {
+    font-size: 14px;
+  }
+
+
+}

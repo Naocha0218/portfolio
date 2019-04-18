@@ -1,0 +1,354 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color: #f7e9f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;;
+}
+
+.clear {
+  clear: left;
+}
+
+/*top*/
+
+.top-wrapper {
+  padding: 270px 0;
+  background-image: url(../image/gorimepresetV7_TP_V.jpg);
+  background-size: cover;
+  color: #b8965f;
+  text-align: center;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 9px;
+  font-weight: normal;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover{
+  opacity: 1;
+}
+
+.btn.twitter{
+  box-shadow: 0 7px #4082b4;
+}
+
+.btn.qiita{
+  box-shadow: 0 7px #477a2e;
+}
+
+.btn.wantedly{
+  box-shadow: 0 7px #066368;
+}
+
+.btn.github{
+  box-shadow: 0 7px #24496e;
+}
+
+.btn:active{
+  box-shadow: none;
+  position: relative;
+  top:7px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.fa-stack{
+  font-size: 6px;
+}
+
+.github {
+  background-color: #4183c4;
+}
+.wantedly {
+  background-color:#0aa4ab;
+}
+
+.qiita {
+  background-color: #6ebc47;
+}
+
+.fab {
+  margin-right: 5px;
+}
+
+/*ヘッダー*/
+header {
+  height: 60px;
+  width: 100%;
+  background-color: #d5b8b4;
+  position :fixed;
+  top: 0;
+  z-index: 10;
+  opacity: 0.9;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 10px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 60px;
+  padding: 0 25px;
+  color: #7a6747;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*モーダル*/
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top:100px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  overflow:auto;
+  height: 80%;
+  z-index: 2;
+}
+
+body.no-scroll{
+  overflow: hidden;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
+
+/*アバウト*/
+.about-wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.about {
+  height: 400px;
+  width: 70%;
+  min-width: 600px;
+  margin: 0 auto;
+}
+
+.about-left {
+  float: left;
+  width: 40%;
+}
+
+.about-right {
+  float: right;
+  width: 55%;
+  padding: 0 20px;
+  margin: 0 0 0 5% ;
+  height: 80%;
+}
+
+.buta {
+  border-radius: 50%;
+  width: 250px;
+}
+
+.profile-title {
+  text-align: center;
+}
+
+.profile-left{
+  float: left;
+  width: 30%;
+  text-align: left;
+}
+
+.profile-right{
+  float: left;
+  width: 70%;
+  text-align: left;
+}
+
+.profile li {
+  margin-top: 10px;
+}
+
+.profile-left li {
+  border-bottom: 1px solid #7a6747;
+}
+
+.heading {
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  color: #7a6747;
+  width: 200px;
+}
+
+.heading h2 {
+  border-bottom: 1px solid #63471d;
+  font-weight: normal;
+}
+
+/*ポートフォリオ*/
+.portfolio-wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.portfolio {
+  float: left;
+  width: 33.3333%;
+}
+
+.portfolio-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.portfolio-icon p {
+  position: absolute;
+  top: 44%;
+  width: 100%;
+  color: white;
+}
+
+#portfolio-detail img {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #b3aeb5;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+/*コンタクト*/
+.contact-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-top: 80px;
+  padding-bottom: 180px;
+  text-align: center;
+}
+
+.contact {
+  margin: 0 auto;
+  padding: 0 0 0 20px;
+  width: 250px;
+}
+
+.mail {
+  padding-bottom: 60px;
+}
+
+
+/*フッター*/
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
