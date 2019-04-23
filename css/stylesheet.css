@@ -281,7 +281,10 @@ body.no-scroll{
   float: left;
   width: 33.3333%;
 }
-
+.portfolio img {
+  height: 200px;
+  width: 300px;
+}
 .portfolio-icon {
   position: relative;
   cursor: pointer;
